@@ -158,10 +158,11 @@ export const weekPlanSlides: ShowcaseSlide[] = [
     height: 985,
   },
   {
-    src: '/ukeplan/dagen-i-boks.png',
+    src: '/ukeplan/uke.png',
     title: 'Dagen er i boks',
-    text: 'Når alle dagens oppgaver er gjort, feirer maskoten med konfetti.',
-    width: 1913,
-    height: 986,
+    text: 'Når alle dagens eller ukens oppgaver er gjort, feirer maskoten med konfetti.',
+    width: 1908,
+    height: 982,
+    overlay: '/ukeplan/feiring.html',
   },
 ]
