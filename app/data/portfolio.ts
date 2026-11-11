@@ -1,4 +1,4 @@
-import type { ContactLink, Job, SkillGroup, StudyProject, WorkCase } from '~/types/portfolio'
+import type { ContactLink, Job, SkillGroup, StudyProject, WorkCase, ShowcaseSlide } from '~/types/portfolio'
 
 export const cvUrl = '/Madeleine-Bergvik-CV.pdf'
 
@@ -140,4 +140,28 @@ export const contactLinks: ContactLink[] = [
   { label: 'Telefon', value: '+47 463 17 018', href: 'tel:+4746317018' },
   { label: 'LinkedIn', value: 'Madeleine Bergvik', href: 'https://www.linkedin.com/in/madeleine-bergvik-276b6b20a' },
   { label: 'GitHub', value: 'madeleinecmarie', href: 'https://github.com/madeleinecmarie' },
+]
+
+export const weekPlanSlides: ShowcaseSlide[] = [
+  {
+    src: '/ukeplan/rediger.png',
+    title: 'Planlegg uken',
+    text: 'Legg oppgaver fra banken rett inn på dagene, sortert i kategorier.',
+    width: 1916,
+    height: 977,
+  },
+  {
+    src: '/ukeplan/innstillinger.png',
+    title: 'Filtrer på tags',
+    text: 'Velg tags som åpnevakt eller kasseansvarlig, og hva som vises på kortene.',
+    width: 1917,
+    height: 985,
+  },
+  {
+    src: '/ukeplan/dagen-i-boks.png',
+    title: 'Dagen er i boks',
+    text: 'Når alle dagens oppgaver er gjort, feirer maskoten med konfetti.',
+    width: 1913,
+    height: 986,
+  },
 ]

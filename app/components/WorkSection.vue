@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { workCases } from '~/data/portfolio'
+import { weekPlanSlides, workCases } from '~/data/portfolio'
 </script>
 
 <template>
@@ -24,6 +24,12 @@ import { workCases } from '~/data/portfolio'
           </ul>
         </li>
       </ul>
+
+      <div class="showcase-block">
+        <h3 class="showcase-title">Ukeplanen</h3>
+        <p class="showcase-lead">Skjermbilder fra testmiljøet.</p>
+        <ScreenShowcase name="Ukeplanen" :slides="weekPlanSlides" />
+      </div>
 
       <p class="note">
         Jeg har jobbet tett med designer og produkteiere fra første skisse til ferdig funksjon. I hverdagen har jeg brukt
@@ -76,6 +82,22 @@ import { workCases } from '~/data/portfolio'
 .case .tags {
   margin-top: auto;
   padding-top: 8px;
+}
+
+.showcase-block {
+  margin-top: 64px;
+}
+
+.showcase-title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.showcase-lead {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 .note {

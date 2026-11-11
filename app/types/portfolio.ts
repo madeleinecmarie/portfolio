@@ -33,3 +33,11 @@ export interface Job {
   period: string
 }
 
+export interface ShowcaseSlide {
+  src?: string
+  title: string
+  text: string
+  width: number
+  height: number
+  overlay?: string
+}
